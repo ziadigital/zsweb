@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ZS Consultancy - Study, Visit, Work, Hajj and Umrah Visa Guidance in Peshawar, Pakistan. Owner: Zia Khan.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:,">
+<title>ZS Consultancy | Your Dreams, Our Guidance</title>
+
+<style>
+:root {
+  --red: #c8102e;
+  --dark-red: #920019;
+  --black: #171717;
+  --white: #ffffff;
+  --light: #f8f5f5;
+  --gray: #666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; }
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+header {
+  background: white;
+  padding: 12px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px #00000012;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--red);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.logo h2 {
+  color: var(--red);
+  font-size: 22px;
+}
+
+.logo small {
+  display: block;
+  color: #333;
+  font-size: 11px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 2px;
+}
+
+nav a:hover { color: var(--red); }
+
+.btn {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  border: 0;
+  padding: 12px 23px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: var(--dark-red);
+  transform: translateY(-3px);
+}
+
+.menu-btn {
+  display: none;
+  border: 0;
+  background: var(--red);
+  color: white;
+  padding: 8px 14px;
+  min-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 590px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, #190005ed, #650014c9, #17000099),
+    url("/img/hero-background.jpg")
+    center/cover;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero-content { max-width: 620px; flex: 1 1 340px; }
+
+.hero h1 {
+  font-size: clamp(34px, 5.5vw, 60px);
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+.hero h1 span { color: #ff455e; }
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-label {
+  background: #ffffff20;
+  padding: 8px 15px;
+  border-left: 4px solid #ff354f;
+  display: inline-block;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* OWNER BLOCK (home page) */
+
+.owner-block {
+  text-align: center;
+  flex: 0 1 300px;
+  margin: 0 auto;
+}
+
+.owner-name-top {
+  font-size: clamp(26px, 3.4vw, 36px);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.owner-photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 12%;
+  background: #ffffff14;
+  border: 5px solid #ff354f;
+  box-shadow: 0 0 0 6px #ffffff2b, 0 18px 40px #00000055;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+}
+
+/* GENERAL */
+
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+  color: var(--red);
+}
+
+.section-title p {
+  color: var(--gray);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.about-photo img {
+  width: 100%;
+  max-height: 490px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 12px;
+  border: 5px solid #f2dddd;
+}
+
+.about-text h2 {
+  font-size: 34px;
+  color: var(--red);
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.side-photo {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* SERVICES */
+
+.services { background: var(--light); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 10px;
+  border-bottom: 4px solid var(--red);
+  box-shadow: 0 5px 20px #0000000b;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px #00000015;
+}
+
+.card .icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--red);
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+/* DEGREE AND VISA OPTIONS */
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.option {
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+}
+
+.option .icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.option h3 { color: var(--red); margin-bottom: 8px; }
+
+.option p { color: #555; font-size: 14px; margin-bottom: 10px; }
+
+.option .btn { margin-top: 8px; }
+
+/* DESTINATIONS */
+
+.destinations {
+  background: #fafafa;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.country {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 220px;
+  color: white;
+  background: #333;
+}
+
+.country img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s;
+}
+
+.country:hover img { transform: scale(1.1); }
+
+.country h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 15px 15px;
+  background: linear-gradient(transparent, #000d);
+  font-size: 23px;
+}
+
+.destinations-note {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  max-width: 760px;
+  margin: 26px auto 0;
+}
+
+
+.destinations .country { cursor: pointer; }
+
+.destinations .country:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 2px;
+}
+
+.country-hint {
+  display: none;
+  color: var(--red);
+  font-size: 13px;
+  font-weight: bold;
+  margin: -6px 0 14px;
+}
+
+.country-hint.show { display: block; }
+
+/* INSTRUCTIONS */
+
+.instructions {
+  background: #fff5f6;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.step {
+  padding: 22px;
+  background: white;
+  border-radius: 8px;
+  border-top: 4px solid var(--red);
+}
+
+.step strong {
+  font-size: 28px;
+  color: var(--red);
+}
+
+/* FORM */
+
+.contact {
+  background: var(--light);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.form-box, .contact-info {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #0000000b;
+}
+
+.form-box h3, .contact-info h3 {
+  color: var(--red);
+  margin-bottom: 18px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 14px;
+  outline-color: var(--red);
+}
+
+.form-box textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-info p {
+  margin-bottom: 18px;
+  color: #555;
+}
+
+/* STUDY DETAILS (shown for Study Visa + Bachelor / Master / PhD) */
+
+.study-fields {
+  display: none;
+  background: #fff5f6;
+  border: 1px solid #f2d3d8;
+  border-radius: 8px;
+  padding: 16px 14px 4px;
+  margin-bottom: 14px;
+}
+
+.study-fields.show { display: block; }
+
+.study-fields h4 {
+  color: var(--red);
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.study-fields label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* SUBMIT CONFIRMATION + REFERENCE */
+
+.submit-confirmation {
+  display: none;
+  background: #eefbf1;
+  border: 1px solid #bfe8cb;
+  border-radius: 8px;
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.submit-confirmation.show { display: block; }
+
+.submit-confirmation h4 {
+  color: #146c2e;
+  margin-bottom: 8px;
+}
+
+.submit-confirmation p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ref-number {
+  display: inline-block;
+  background: white;
+  border: 2px dashed var(--red);
+  color: var(--red);
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 4px 0 12px;
+}
+
+/* AFTER YOU SUBMIT (steps only — no check box in this section) */
+
+.reply-section { background: white; }
+
+.reply-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.reply-step {
+  padding: 22px;
+  background: var(--light);
+  border-radius: 8px;
+  border-top: 4px solid var(--red);
+}
+
+.reply-step strong {
+  font-size: 26px;
+  color: var(--red);
+}
+
+.reply-step h3 { margin: 6px 0 8px; }
+
+.reply-step p { color: #555; font-size: 14px; }
+
+.reply-open-wrap {
+  text-align: center;
+  margin-top: 28px;
+}
+
+/* CHECK APPLICATION — SEPARATE PAGE (opens on Receive / Ask click) */
+
+.reply-page {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: white;
+  overflow-y: auto;
+  padding: 22px 5% 60px;
+}
+
+.reply-page.show { display: block; }
+
+.reply-page-bar {
+  max-width: 620px;
+  margin: 0 auto 22px;
+}
+
+.reply-page-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.reply-page-inner .section-title { margin-bottom: 24px; }
+
+.status-box {
+  background: var(--light);
+  padding: 26px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #0000000b;
+}
+
+.status-box h3 {
+  color: var(--red);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.status-box p {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.status-box input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  outline-color: var(--red);
+}
+
+.status-note {
+  margin-top: 12px;
+  color: var(--red);
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* MAP */
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #171717;
+  color: white;
+  padding: 45px 8% 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+
+footer h3 { color: #ff435c; margin-bottom: 15px; }
+
+footer a {
+  display: block;
+  color: #ddd;
+  margin: 7px 0;
+  padding: 4px 0;
+}
+
+.copyright {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 2000;
+  background: #25d366;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px #0003;
+  font-weight: bold;
+}
+
+/* ANIMATION */
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 0 0 #c8102e55; }
+  50% { box-shadow: 0 0 18px 5px #c8102e55; }
+}
+
+.animated { animation: glow 2s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animated { animation: none; }
+  * { scroll-behavior: auto; }
+}
+
+@media(max-width:900px) {
+  .reply-steps { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  nav {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: 0 12px 20px #00000014;
+  }
+  nav a { padding: 10px 4px; }
+  nav.show { display: flex; }
+  .menu-btn { display: block; }
+  .hero-inner { justify-content: center; text-align: center; }
+  .hero-content { text-align: center; }
+  .hero-buttons { justify-content: center; }
+  .hero-label { border-left: 0; border-bottom: 3px solid #ff354f; }
+}
+
+@media(max-width:650px) {
+  header { padding: 10px 4%; }
+  .logo h2 { font-size: 17px; }
+  .logo-mark { width: 46px; height: 46px; font-size: 17px; }
+  section { padding: 55px 5%; }
+  .about-grid, .contact-grid,
+  .footer-grid { grid-template-columns: 1fr; }
+  .country-grid { grid-template-columns: 1fr 1fr; }
+  .options { grid-template-columns: 1fr; }
+  .hero { padding: 60px 6%; min-height: 500px; }
+  .hero p { font-size: 16px; }
+  .grid { grid-template-columns: 1fr 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .owner-photo { width: 200px; height: 200px; }
+}
+
+@media(max-width:390px) {
+  .grid, .country-grid, .steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark" aria-hidden="true">ZS</div>
+    <div>
+      <h2>ZS CONSULTANCY</h2>
+      <small>Your Dreams, Our Guidance</small>
+    </div>
+  </div>
+
+  <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+  <nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#destinations">Countries</a>
+    <a href="#reply" class="open-reply">My Application</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn">Apply Now</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+
+    <div class="hero-content">
+      <span class="hero-label">WELCOME TO ZS CONSULTANCY</span>
+      <h1>YOUR FUTURE <span>STARTS HERE!</span></h1>
+      <p>
+        Explore international opportunities with professional
+        guidance for Study, Visit, Work, Hajj and Umrah visas.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn animated">Apply Now</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+    </div>
+
+    <div class="owner-block">
+      <div class="owner-name-top">Owner Zia Khan</div>
+      <img class="owner-photo" src="/img/WhatsApp_Image_2026-08-14_at_17.41.47-removebg-preview.png" alt="Zia Khan, Owner of ZS Consultancy">
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="about-grid">
+
+    <div class="about-photo">
+      <img src="/img/images (7).jpg"
+      alt="Graduates celebrating at a university campus">
+    </div>
+
+    <div class="about-text">
+      <h2>About ZS Consultancy</h2>
+      <p>
+        Welcome to ZS Consultancy. We provide guidance to students,
+        families, travellers and professionals who want to explore
+        international opportunities.
+      </p>
+      <p>
+        Our services include study admission guidance, visa
+        documentation assistance, visit visa consultation,
+        work visa guidance and Hajj &amp; Umrah visa assistance.
+      </p>
+      <p>
+        Our goal is to make the application process easier
+        through clear instructions and professional support.
+      </p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="section-title">
+    <h2>Our Visa Services</h2>
+    <p>Choose the service that matches your requirements.</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>Study Visa</h3>
+      <p>University admissions, degree programs,
+      documentation and student visa guidance.</p>
+      <a href="#study">Learn More →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">✈️</div>
+      <h3>Visit Visa</h3>
+      <p>Family visits, business travel and tourism
+      visa application guidance.</p>
+      <a href="#visit">Learn More →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">💼</div>
+      <h3>Work Visa</h3>
+      <p>Employment opportunities, work permit
+      information and document guidance.</p>
+      <a href="#work">Learn More →</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🕋</div>
+      <h3>Hajj &amp; Umrah</h3>
+      <p>Guidance for pilgrimage visa requirements
+      and application procedures.</p>
+      <a href="#hajj">Learn More →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- STUDY VISA -->
+
+<section id="study">
+  <div class="section-title">
+    <h2>Study Visa Programs</h2>
+    <p>Choose your education level.</p>
+  </div>
+
+  <div class="options">
+
+    <div class="option">
+      <div class="icon">🎓</div>
+      <h3>Bachelor Degree</h3>
+      <p>For students who have completed
+      Intermediate / 12 years of education.</p>
+      <p><b>Instructions:</b> Prepare academic certificates,
+      transcripts, passport and required language documents.
+      Check university eligibility and intake deadlines.</p>
+      <a href="#contact" class="btn degree-apply" data-degree="Bachelor">Apply Now</a>
+    </div>
+
+    <div class="option">
+      <div class="icon">📚</div>
+      <h3>Master Degree</h3>
+      <p>For graduates holding a recognized
+      Bachelor's degree.</p>
+      <p><b>Instructions:</b> Prepare Bachelor transcripts,
+      degree, CV, statement of purpose and
+      recommendation letters where required.</p>
+      <a href="#contact" class="btn degree-apply" data-degree="Master">Apply Now</a>
+    </div>
+
+    <div class="option">
+      <div class="icon">🏆</div>
+      <h3>PhD Degree</h3>
+      <p>For qualified candidates interested
+      in doctoral research programs.</p>
+      <p><b>Instructions:</b> Prepare Master's degree,
+      research proposal, academic CV,
+      references and supervisor details where required.</p>
+      <a href="#contact" class="btn degree-apply" data-degree="PhD">Apply Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- VISIT VISA -->
+
+<section id="visit" class="services">
+  <div class="section-title">
+    <h2>Visit Visa Categories</h2>
+    <p>Select your travel purpose.</p>
+  </div>
+
+  <div class="grid grid-3">
+
+    <div class="card">
+      <div class="icon">👨‍👩‍👧</div>
+      <h3>Family Visit Visa</h3>
+      <p>For visiting family members and relatives.</p>
+      <p><b>Instructions:</b> Prepare passport,
+      relationship evidence, invitation or sponsor
+      documents where required.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏢</div>
+      <h3>Business Visa</h3>
+      <p>For eligible business meetings and activities.</p>
+      <p><b>Instructions:</b> Prepare business invitation,
+      company information, travel purpose and
+      financial documents where required.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Tourist Visa</h3>
+      <p>For tourism and exploring international destinations.</p>
+      <p><b>Instructions:</b> Prepare travel itinerary,
+      accommodation details, financial evidence
+      and return travel plans where required.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WORK VISA -->
+
+<section id="work">
+  <div class="section-title">
+    <h2>Work Visa Guidance</h2>
+    <p>Explore employment-based visa opportunities.</p>
+  </div>
+
+  <div class="about-grid">
+    <div>
+      <h3 style="color:#c8102e;font-size:27px">
+        Start Your International Career
+      </h3>
+      <p>Get guidance about employment-related visa
+      requirements, employer documentation and
+      application procedures.</p>
+      <br>
+      <p><b>Required documents may include:</b></p>
+      <ul style="padding-left:22px">
+        <li>Valid Passport</li>
+        <li>Updated CV / Resume</li>
+        <li>Educational Certificates</li>
+        <li>Employment Offer / Contract</li>
+        <li>Professional Experience Evidence</li>
+        <li>Other country-specific documents</li>
+      </ul>
+      <br>
+      <p>Eligibility, employer sponsorship and visa
+      requirements depend on the destination country.</p>
+      <a href="#contact" class="btn">Get Consultation</a>
+    </div>
+
+    <div>
+      <img class="side-photo"
+      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900"
+      alt="Professional working team in an office">
+    </div>
+  </div>
+</section>
+
+<!-- HAJJ AND UMRAH -->
+
+<section id="hajj" class="services">
+  <div class="section-title">
+    <h2>Hajj &amp; Umrah Visa Assistance</h2>
+    <p>Guidance for your sacred journey.</p>
+  </div>
+
+  <div class="about-grid">
+    <div>
+      <img class="side-photo"
+      src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=900"
+      alt="The Holy Kaaba in Makkah surrounded by pilgrims">
+    </div>
+
+    <div>
+      <h3 style="color:#c8102e;font-size:26px">
+        Your Journey to the Holy Cities
+      </h3>
+      <p>Get assistance with the relevant visa
+      requirements and documentation for Hajj
+      and Umrah travel.</p>
+      <p><b>Instructions:</b></p>
+      <ul style="padding-left:22px">
+        <li>Valid passport</li>
+        <li>Passport-size photographs</li>
+        <li>Required personal information</li>
+        <li>Health documents where applicable</li>
+        <li>Travel and booking information</li>
+      </ul>
+      <br>
+      <a href="#contact" class="btn">Contact for Details</a>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTRIES -->
+
+<section class="destinations" id="destinations">
+
+  <div class="section-title">
+    <h2>Explore Our Destinations</h2>
+    <p>Discover international opportunities for Study, Visit, Work, Hajj &amp; Umrah.</p>
+  </div>
+
+  <div class="country-grid">
+
+    <div class="country" data-country="Germany" role="button" tabindex="0" title="Apply for Germany">
+      <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700"
+      alt="Brandenburg Gate, Berlin, Germany">
+      <h3>🇩🇪 Germany</h3>
+    </div>
+
+    <div class="country" data-country="Turkey" role="button" tabindex="0" title="Apply for Turkey">
+      <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=700"
+      alt="Blue Mosque, Istanbul, Turkey">
+      <h3>🇹🇷 Turkey</h3>
+    </div>
+
+    <div class="country" data-country="Saudi Arabia" role="button" tabindex="0" title="Apply for Saudi Arabia">
+      <img src="https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=700"
+      alt="The Holy Kaaba, Makkah, Saudi Arabia">
+      <h3>🇸🇦 Saudi Arabia</h3>
+    </div>
+
+    <div class="country" data-country="Qatar" role="button" tabindex="0" title="Apply for Qatar">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700"
+      alt="Doha skyline, Qatar">
+      <h3>🇶🇦 Qatar</h3>
+    </div>
+
+    <div class="country" data-country="Kazakhstan" role="button" tabindex="0" title="Apply for Kazakhstan">
+      <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?w=700"
+      alt="Bayterek Tower, Astana, Kazakhstan">
+      <h3>🇰🇿 Kazakhstan</h3>
+    </div>
+
+    <div class="country" data-country="Oman" role="button" tabindex="0" title="Apply for Oman">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=700"
+      alt="Muscat coastline, Oman">
+      <h3>🇴🇲 Oman</h3>
+    </div>
+
+  </div>
+
+  <p class="destinations-note">Hajj &amp; Umrah guidance is for Saudi Arabia. All guidance is subject to each country's current rules and the relevant authority's requirements.</p>
+</section>
+
+<!-- HOW TO APPLY -->
+
+<section class="instructions">
+  <div class="section-title">
+    <h2>How To Apply?</h2>
+    <p>Follow these simple steps.</p>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <strong>01</strong>
+      <h3>Select Service</h3>
+      <p>Choose Study, Visit, Work or Hajj &amp; Umrah.</p>
+    </div>
+
+    <div class="step">
+      <strong>02</strong>
+      <h3>Submit Form</h3>
+      <p>Provide your correct personal and academic information.</p>
+    </div>
+
+    <div class="step">
+      <strong>03</strong>
+      <h3>Document Review</h3>
+      <p>Our team can guide you about the relevant documents.</p>
+    </div>
+
+    <div class="step">
+      <strong>04</strong>
+      <h3>Application Process</h3>
+      <p>Proceed according to the applicable university
+      or visa authority requirements.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+
+<section class="contact" id="contact">
+
+  <div class="section-title">
+    <h2>Apply For Consultation</h2>
+    <p>Fill in your details and contact our team.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="form-box">
+      <h3>Client Application Form</h3>
+
+      <form id="applicationForm">
+
+        <input id="name" type="text"
+        placeholder="Full Name" required>
+
+        <input id="phone" type="tel"
+        placeholder="Your WhatsApp Number" required>
+
+        <input id="email" type="email"
+        placeholder="Email Address">
+
+        <select id="service" required>
+          <option value="">Select Visa Service</option>
+          <option>Study Visa</option>
+          <option>Visit Visa</option>
+          <option>Work Visa</option>
+          <option>Hajj Visa</option>
+          <option>Umrah Visa</option>
+        </select>
+
+        <select id="country" required>
+          <option value="">Select Destination</option>
+        </select>
+        <p class="country-hint" id="countryHint">Hajj &amp; Umrah visas are for Saudi Arabia only, so your destination is set to Saudi Arabia.</p>
+
+        <select id="education">
+          <option value="">Education Level (if applicable)</option>
+          <option>Intermediate</option>
+          <option>Bachelor</option>
+          <option>Master</option>
+          <option>PhD</option>
+          <option>Other</option>
+        </select>
+
+        <div class="study-fields" id="studyFields">
+          <h4>Your Study Details</h4>
+
+          <label for="marksObtained">Marks Obtained</label>
+          <input id="marksObtained" type="text"
+          placeholder="e.g. 850 / 1100 or 78% or CGPA 3.5">
+
+          <label for="studyPlace">Place Where You Studied (City &amp; Country)</label>
+          <input id="studyPlace" type="text"
+          placeholder="e.g. Peshawar, Pakistan">
+
+          <label for="institution">School / College / University Name</label>
+          <input id="institution" type="text"
+          placeholder="Name of the school, college or university where you studied">
+        </div>
+
+        <textarea id="message"
+        placeholder="Tell us about your requirements"></textarea>
+
+        <button class="btn" type="submit" style="width:100%">
+          Submit Application via WhatsApp
+        </button>
+
+        <div class="submit-confirmation" id="submitConfirmation" role="status">
+          <h4>✅ Application Received — Please Note Your Reference Number</h4>
+          <div class="ref-number" id="refNumber">ZS-2026-000000</div>
+          <p>
+            Your application has been sent to ZS Consultancy on WhatsApp.
+            <b>Zia Khan (Owner)</b> will receive it and reply to you
+            <b>on your own WhatsApp number</b> with a message and your status —
+            <b>Approved</b> or <b>Rejected</b>. You will see the reply in your
+            WhatsApp chat. Please keep this reference number safe
+            and mention it when you ask about your application.
+          </p>
+          <button class="btn" id="refWhatsappBtn" type="button">Ask About My Application</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+
+      <p>📍 <b>Office Address:</b><br>
+      Peshawar Saddar, Deans Plaza, FF-518,
+      Peshawar, Pakistan</p>
+
+      <p>📱 <b>WhatsApp:</b><br>
+      03028747910</p>
+
+      <p>🌐 <b>Brand:</b><br>
+      ZS Consultancy</p>
+
+      <p>🎓 <b>Services:</b><br>
+      Study, Visit, Work, Hajj &amp; Umrah Visa Guidance</p>
+
+      <a href="https://wa.me/923028747910"
+      class="btn" target="_blank" rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- AFTER YOU SUBMIT: HOW THE REPLY WORKS (steps only) -->
+
+<section class="reply-section">
+
+  <div class="section-title">
+    <h2>After You Submit — How You Get Our Reply</h2>
+    <p>Every application is received by ZS Consultancy and answered on WhatsApp.</p>
+  </div>
+
+  <div class="reply-steps">
+
+    <div class="reply-step">
+      <strong>01</strong>
+      <h3>We Receive Your Application</h3>
+      <p>When you submit the form, your application opens in WhatsApp and is
+      delivered to ZS Consultancy (Owner: Zia Khan) on WhatsApp
+      <b>03028747910</b>, together with your reference number.</p>
+    </div>
+
+    <div class="reply-step">
+      <strong>02</strong>
+      <h3>We Reply on Your WhatsApp</h3>
+      <p>We reply to you in the same WhatsApp chat, on the WhatsApp number
+      you wrote in the form, with a message and your status —
+      <b>Approved</b> or <b>Rejected</b>. No account or login is needed —
+      just check your WhatsApp messages for our reply.</p>
+    </div>
+
+    <div class="reply-step">
+      <strong>03</strong>
+      <h3>Track With Your Reference Number</h3>
+      <p>After submitting, you get a reference number like
+      <b>ZS-2026-123456</b> with your <b>Application Received</b> message.
+      To ask about your application, open the separate
+      <b>Check Your Application</b> page from the button below —
+      your reference number is sent with your message so we can find
+      your application quickly.</p>
+    </div>
+
+  </div>
+
+  <div class="reply-open-wrap">
+    <button class="btn open-reply" type="button">Check Your Application / Ask for a Reply</button>
+  </div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="map">
+  <div class="section-title">
+    <h2>Find Our Office</h2>
+    <p>Visit ZS Consultancy, Deans Plaza, Peshawar.</p>
+  </div>
+
+  <iframe
+  title="Map of Deans Plaza, Peshawar"
+  src="https://maps.google.com/maps?q=Deans%20Plaza%20Peshawar%20Pakistan&t=&z=16&ie=UTF8&iwloc=&output=embed"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+
+  <br><br>
+  <a class="btn"
+  href="https://www.google.com/maps/search/?api=1&query=Deans+Plaza+Peshawar+Pakistan"
+  target="_blank" rel="noopener">
+    Open Google Maps
+  </a>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>ZS CONSULTANCY</h3>
+      <p>Your Dreams, Our Guidance.</p>
+      <p>Professional guidance for international
+      education and visa applications.</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <h3>Legal</h3>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms &amp; Conditions</a>
+      <a href="#disclaimer">Disclaimer</a>
+      <a href="#contact">Get Consultation</a>
+    </div>
+
+  </div>
+
+  <div id="privacy" class="copyright">
+    Privacy: Client information should only be used
+    for consultation and application purposes.
+  </div>
+
+  <div id="terms" class="copyright">
+    Terms: All services are subject to applicable
+    country and authority requirements.
+  </div>
+
+  <div id="disclaimer" class="copyright">
+    Disclaimer: Visa approval is determined by
+    the relevant government or immigration authority.
+    No visa or admission is guaranteed.
+  </div>
+
+  <div class="copyright">
+    © 2026 ZS Consultancy. All Rights Reserved.
+  </div>
+
+</footer>
+
+<!-- CHECK YOUR APPLICATION — SEPARATE PAGE
+     Opens only when Receive / Ask About My Application / My Application is clicked. -->
+
+<div class="reply-page" id="replyPage" role="dialog" aria-modal="true" aria-labelledby="replyPageTitle">
+
+  <div class="reply-page-bar">
+    <button class="btn" id="replyBackBtn" type="button">← Back to Website</button>
+  </div>
+
+  <div class="reply-page-inner">
+
+    <div class="section-title">
+      <h2 id="replyPageTitle">Check Your Application</h2>
+      <p>Ask ZS Consultancy for a reply about your application.</p>
+    </div>
+
+    <div class="status-box">
+      <h3>Ask for a Reply</h3>
+      <p>Enter the reference number you received with your
+      <b>Application Received</b> message when you submitted the form.
+      We reply on your WhatsApp with a message and your status —
+      <b>Approved</b> or <b>Rejected</b>.</p>
+
+      <form id="statusForm">
+        <input id="statusRef" type="text"
+        placeholder="Your Reference Number (e.g. ZS-2026-123456)" required>
+        <input id="statusName" type="text"
+        placeholder="Your Full Name" required>
+        <button class="btn" type="submit" style="width:100%">
+          Ask on WhatsApp
+        </button>
+      </form>
+
+      <p id="statusNote" class="status-note"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/923028747910"
+target="_blank" rel="noopener">
+  ☎ WhatsApp
+</a>
+
+<script>
+
+// MOBILE MENU
+
+var navbar = document.getElementById("navbar");
+var menuBtn = document.getElementById("menuBtn");
+
+menuBtn.addEventListener("click", function() {
+  var open = navbar.classList.toggle("show");
+  menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+
+navbar.addEventListener("click", function(e) {
+  if (e.target.tagName === "A") {
+    navbar.classList.remove("show");
+    menuBtn.setAttribute("aria-expanded", "false");
+  }
+});
+
+// APPLICATION FORM TO WHATSAPP
+
+var lastReference = "";
+var lastApplicantName = "";
+
+document.getElementById("applicationForm")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var service = document.getElementById("service").value;
+  var country = document.getElementById("country").value;
+  var education = document.getElementById("education").value;
+  var message = document.getElementById("message").value;
+
+  // Reference number for this application (also shown to the client)
+  lastReference = "ZS-2026-" + Math.floor(100000 + Math.random() * 900000);
+
+  var text =
+"NEW CLIENT APPLICATION - ZS CONSULTANCY\n" +
+"Reference No: " + lastReference + "\n\n" +
+"Name: " + name + "\n" +
+"Phone: " + phone + "\n" +
+"Email: " + email + "\n" +
+"Service: " + service + "\n" +
+"Country: " + country + "\n" +
+"Education: " + education + "\n";
+
+  if (studyFieldsVisible()) {
+    text +=
+"Marks Obtained: " + document.getElementById("marksObtained").value + "\n" +
+"Place of Study: " + document.getElementById("studyPlace").value + "\n" +
+"School / College / University: " + document.getElementById("institution").value + "\n";
+  }
+
+  text +=
+"Message: " + message + "\n\n" +
+"Please contact me regarding my application.";
+
+  var url =
+  "https://wa.me/923028747910?text=" +
+  encodeURIComponent(text);
+
+  window.open(url, "_blank");
+
+  // Show the client their reference number and how the reply will reach them.
+  // The "Ask About My Application" button beside it opens the separate
+  // Check Your Application page with these details already filled in.
+  document.getElementById("refNumber").textContent = lastReference;
+  lastApplicantName = name;
+  var confirmation = document.getElementById("submitConfirmation");
+  confirmation.classList.add("show");
+  confirmation.scrollIntoView({ behavior: "smooth", block: "center" });
+
+});
+
+// STUDY DETAILS: shown only for Study Visa + Bachelor / Master / PhD
+
+var educationEl = document.getElementById("education");
+var studyFieldsEl = document.getElementById("studyFields");
+
+function studyFieldsVisible() {
+  var degree = educationEl.value;
+  return document.getElementById("service").value === "Study Visa" &&
+    (degree === "Bachelor" || degree === "Master" || degree === "PhD");
+}
+
+function updateStudyFields() {
+  var show = studyFieldsVisible();
+  studyFieldsEl.classList.toggle("show", show);
+  document.getElementById("marksObtained").required = show;
+  document.getElementById("studyPlace").required = show;
+  document.getElementById("institution").required = show;
+}
+
+educationEl.addEventListener("change", updateStudyFields);
+
+// CHECK YOUR APPLICATION PAGE: a separate page that opens only when the
+// client clicks Receive's "Ask About My Application" button, the
+// "My Application" menu link, or the button under the After You Submit steps.
+
+var replyPage = document.getElementById("replyPage");
+
+function openReplyPage() {
+  if (lastReference) {
+    document.getElementById("statusRef").value = lastReference;
+  }
+  if (lastApplicantName) {
+    document.getElementById("statusName").value = lastApplicantName;
+  }
+  replyPage.classList.add("show");
+  replyPage.scrollTop = 0;
+  document.body.style.overflow = "hidden";
+}
+
+function closeReplyPage() {
+  replyPage.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".open-reply").forEach(function(el) {
+  el.addEventListener("click", function(e) {
+    e.preventDefault();
+    openReplyPage();
+  });
+});
+
+document.getElementById("refWhatsappBtn")
+.addEventListener("click", function() {
+  openReplyPage();
+});
+
+document.getElementById("replyBackBtn")
+.addEventListener("click", function() {
+  closeReplyPage();
+});
+
+// STATUS / REPLY ENQUIRY: client asks about an application by reference number
+
+document.getElementById("statusForm")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  var ref = document.getElementById("statusRef").value.trim();
+  var sName = document.getElementById("statusName").value.trim();
+
+  var text =
+  "Hello ZS Consultancy, my name is " + sName + ". " +
+  "I submitted my application with Reference No: " + ref + ". " +
+  "Please reply and update me about my application.";
+
+  document.getElementById("statusNote").textContent =
+  "Opening WhatsApp — your reference number is included in the message.";
+
+  window.open(
+    "https://wa.me/923028747910?text=" + encodeURIComponent(text),
+    "_blank"
+  );
+
+});
+
+// ALL COUNTRIES (worldwide list)
+
+var COUNTRIES = [
+"Afghanistan|AF",
+"Albania|AL",
+"Algeria|DZ",
+"Andorra|AD",
+"Angola|AO",
+"Antigua and Barbuda|AG",
+"Argentina|AR",
+"Armenia|AM",
+"Australia|AU",
+"Austria|AT",
+"Azerbaijan|AZ",
+"Bahamas|BS",
+"Bahrain|BH",
+"Bangladesh|BD",
+"Barbados|BB",
+"Belarus|BY",
+"Belgium|BE",
+"Belize|BZ",
+"Benin|BJ",
+"Bhutan|BT",
+"Bolivia|BO",
+"Bosnia and Herzegovina|BA",
+"Botswana|BW",
+"Brazil|BR",
+"Brunei|BN",
+"Bulgaria|BG",
+"Burkina Faso|BF",
+"Burundi|BI",
+"Cabo Verde|CV",
+"Cambodia|KH",
+"Cameroon|CM",
+"Canada|CA",
+"Central African Republic|CF",
+"Chad|TD",
+"Chile|CL",
+"China|CN",
+"Colombia|CO",
+"Comoros|KM",
+"Congo|CG",
+"Costa Rica|CR",
+"Croatia|HR",
+"Cuba|CU",
+"Cyprus|CY",
+"Czechia|CZ",
+"Denmark|DK",
+"Djibouti|DJ",
+"Dominica|DM",
+"Dominican Republic|DO",
+"DR Congo|CD",
+"Ecuador|EC",
+"Egypt|EG",
+"El Salvador|SV",
+"Equatorial Guinea|GQ",
+"Eritrea|ER",
+"Estonia|EE",
+"Eswatini|SZ",
+"Ethiopia|ET",
+"Fiji|FJ",
+"Finland|FI",
+"France|FR",
+"Gabon|GA",
+"Gambia|GM",
+"Georgia|GE",
+"Germany|DE",
+"Ghana|GH",
+"Greece|GR",
+"Grenada|GD",
+"Guatemala|GT",
+"Guinea|GN",
+"Guinea-Bissau|GW",
+"Guyana|GY",
+"Haiti|HT",
+"Honduras|HN",
+"Hungary|HU",
+"Iceland|IS",
+"India|IN",
+"Indonesia|ID",
+"Iran|IR",
+"Iraq|IQ",
+"Ireland|IE",
+"Israel|IL",
+"Italy|IT",
+"Ivory Coast|CI",
+"Jamaica|JM",
+"Japan|JP",
+"Jordan|JO",
+"Kazakhstan|KZ",
+"Kenya|KE",
+"Kiribati|KI",
+"Kuwait|KW",
+"Kyrgyzstan|KG",
+"Laos|LA",
+"Latvia|LV",
+"Lebanon|LB",
+"Lesotho|LS",
+"Liberia|LR",
+"Libya|LY",
+"Liechtenstein|LI",
+"Lithuania|LT",
+"Luxembourg|LU",
+"Madagascar|MG",
+"Malawi|MW",
+"Malaysia|MY",
+"Maldives|MV",
+"Mali|ML",
+"Malta|MT",
+"Marshall Islands|MH",
+"Mauritania|MR",
+"Mauritius|MU",
+"Mexico|MX",
+"Micronesia|FM",
+"Moldova|MD",
+"Monaco|MC",
+"Mongolia|MN",
+"Montenegro|ME",
+"Morocco|MA",
+"Mozambique|MZ",
+"Myanmar|MM",
+"Namibia|NA",
+"Nauru|NR",
+"Nepal|NP",
+"Netherlands|NL",
+"New Zealand|NZ",
+"Nicaragua|NI",
+"Niger|NE",
+"Nigeria|NG",
+"North Korea|KP",
+"North Macedonia|MK",
+"Norway|NO",
+"Oman|OM",
+"Pakistan|PK",
+"Palau|PW",
+"Palestine|PS",
+"Panama|PA",
+"Papua New Guinea|PG",
+"Paraguay|PY",
+"Peru|PE",
+"Philippines|PH",
+"Poland|PL",
+"Portugal|PT",
+"Qatar|QA",
+"Romania|RO",
+"Russia|RU",
+"Rwanda|RW",
+"Saint Kitts and Nevis|KN",
+"Saint Lucia|LC",
+"Saint Vincent and the Grenadines|VC",
+"Samoa|WS",
+"San Marino|SM",
+"Sao Tome and Principe|ST",
+"Saudi Arabia|SA",
+"Senegal|SN",
+"Serbia|RS",
+"Seychelles|SC",
+"Sierra Leone|SL",
+"Singapore|SG",
+"Slovakia|SK",
+"Slovenia|SI",
+"Solomon Islands|SB",
+"Somalia|SO",
+"South Africa|ZA",
+"South Korea|KR",
+"South Sudan|SS",
+"Spain|ES",
+"Sri Lanka|LK",
+"Sudan|SD",
+"Suriname|SR",
+"Sweden|SE",
+"Switzerland|CH",
+"Syria|SY",
+"Taiwan|TW",
+"Tajikistan|TJ",
+"Tanzania|TZ",
+"Thailand|TH",
+"Timor-Leste|TL",
+"Togo|TG",
+"Tonga|TO",
+"Trinidad and Tobago|TT",
+"Tunisia|TN",
+"Turkey|TR",
+"Turkmenistan|TM",
+"Tuvalu|TV",
+"Uganda|UG",
+"Ukraine|UA",
+"United Arab Emirates|AE",
+"United Kingdom|GB",
+"United States|US",
+"Uruguay|UY",
+"Uzbekistan|UZ",
+"Vanuatu|VU",
+"Vatican City|VA",
+"Venezuela|VE",
+"Vietnam|VN",
+"Yemen|YE",
+"Zambia|ZM",
+"Zimbabwe|ZW"
+].map(function(item) {
+  var parts = item.split("|");
+  return { name: parts[0], code: parts[1] };
+});
+
+// FORM: destination dropdown follows the selected service.
+// Hajj Visa / Umrah Visa -> Saudi Arabia only.
+// Study / Visit / Work -> all countries.
+
+var serviceEl = document.getElementById("service");
+var countryEl = document.getElementById("country");
+var countryHint = document.getElementById("countryHint");
+var lastCountry = "";
+
+function fillCountries(onlySaudi) {
+  var current = countryEl.value || lastCountry;
+  countryEl.innerHTML = "";
+
+  var placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = onlySaudi ? "Destination" : "Select Destination";
+  countryEl.appendChild(placeholder);
+
+  COUNTRIES.forEach(function(c) {
+    if (onlySaudi && c.name !== "Saudi Arabia") return;
+    var opt = document.createElement("option");
+    opt.value = c.name;
+    opt.textContent = c.name;
+    countryEl.appendChild(opt);
+  });
+
+  if (onlySaudi) {
+    countryEl.value = "Saudi Arabia";
+  } else if (current) {
+    countryEl.value = current;
+  }
+}
+
+serviceEl.addEventListener("change", function() {
+  var hajj = (serviceEl.value === "Hajj Visa" || serviceEl.value === "Umrah Visa");
+  fillCountries(hajj);
+  countryHint.classList.toggle("show", hajj);
+  updateStudyFields();
+});
+
+countryEl.addEventListener("change", function() {
+  lastCountry = countryEl.value;
+});
+
+fillCountries(false);
+
+// COUNTRY CARDS: click a destination to jump to the form with it selected
+
+function selectCountry(name) {
+  var hajj = (serviceEl.value === "Hajj Visa" || serviceEl.value === "Umrah Visa");
+  if (hajj && name !== "Saudi Arabia") {
+    serviceEl.value = "";
+    countryHint.classList.remove("show");
+    countryEl.value = "";
+    lastCountry = name;
+    fillCountries(false);
+  }
+  lastCountry = name;
+  countryEl.value = name;
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+document.querySelectorAll(".country[data-country]").forEach(function(card) {
+  var name = card.getAttribute("data-country");
+  card.addEventListener("click", function() { selectCountry(name); });
+  card.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      selectCountry(name);
+    }
+  });
+});
+
+// STUDY PROGRAM CARDS: Apply Now pre-selects Study Visa + the degree level
+
+document.querySelectorAll(".degree-apply").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    serviceEl.value = "Study Visa";
+    fillCountries(false);
+    countryHint.classList.remove("show");
+    educationEl.value = btn.getAttribute("data-degree");
+    updateStudyFields();
+  });
+});
+
+updateStudyFields();
+
+</script>
+
+</body>
+</html>
